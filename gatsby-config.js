@@ -121,10 +121,12 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-feed`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `G-LN4FPSXMDH`, // Optional Google Analytics
-      },
+        trackingIds: [
+          "G-LN4FPSXMDH", 
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
